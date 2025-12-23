@@ -22,7 +22,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 2;
-  font-size: 1.4rem; /* BIGGER BASE FONT */
+  font-size: 1.1rem; /* ~17.6px */
 }
 
 /* HEADER */
@@ -47,7 +47,7 @@ nav {
 /* LOGO */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.8rem;
+  font-size: 2.8rem; /* headers unchanged */
   color: var(--accent);
   text-shadow: var(--glow);
 }
@@ -64,7 +64,7 @@ nav {
   text-decoration: none;
   position: relative;
   font-family: 'Explora', sans-serif;
-  font-size: 1.35rem; /* bigger nav text */
+  font-size: 1.1rem; /* ~17px */
 }
 
 .nav-links a::after {
@@ -91,7 +91,7 @@ nav {
   font-family: 'Explora', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.35rem; /* bigger */
+  font-size: 1.1rem; /* ~17px */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -114,7 +114,7 @@ nav {
 
 .hero h1 {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: clamp(4rem, 9vw, 7rem);
+  font-size: clamp(4rem, 9vw, 7rem); /* headers unchanged */
   text-shadow: var(--glow);
 }
 
@@ -123,7 +123,7 @@ nav {
   margin: 16px auto 0;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.5rem; /* bigger hero paragraph */
+  font-size: 1.15rem; /* ~18.4px */
 }
 
 /* BUTTONS */
@@ -142,7 +142,7 @@ nav {
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  font-size: 1.35rem; /* bigger button text */
+  font-size: 1.15rem; /* ~18.4px */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -167,7 +167,7 @@ section {
 
 h2 {
   font-family: 'Explora', sans-serif;
-  font-size: 2.6rem;
+  font-size: 2.6rem; /* headers unchanged */
   margin-bottom: 24px;
 }
 
@@ -176,7 +176,7 @@ h2 {
   background: var(--panel);
   padding: 38px;
   border: 1px solid var(--border);
-  font-size: 1.45rem; /* BIGGER panels, including Booking & Press */
+  font-size: 1.2rem; /* ~19.2px — Booking & Press section included */
 }
 
 /* ABOUT */
@@ -197,7 +197,7 @@ h2 {
   background: var(--panel);
   padding: 28px;
   border: 1px solid var(--border);
-  font-size: 1.4rem; /* bigger tracks */
+  font-size: 1.2rem; /* ~19.2px */
 }
 
 /* SHOWS */
@@ -213,12 +213,12 @@ h2 {
   padding: 24px;
   background: var(--panel);
   border: 1px solid var(--border);
-  font-size: 1.4rem; /* bigger show text */
+  font-size: 1.2rem; /* ~19.2px */
 }
 
 .date {
   font-family: 'Explora', sans-serif;
-  font-size: 1.45rem; /* bigger date */
+  font-size: 1.25rem; /* ~20px */
   color: var(--accent);
 }
 
@@ -229,7 +229,7 @@ footer {
   text-align: center;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.4rem; /* bigger footer text */
+  font-size: 1.2rem; /* ~19.2px */
 }
 
 /* MOBILE */
