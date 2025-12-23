@@ -21,8 +21,8 @@ body {
   font-family: 'Explora', sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.8;
-  font-size: 1.15rem; /* increased readability */
+  line-height: 1.9;
+  font-size: 1.25rem; /* bigger for readability */
 }
 
 /* HEADER */
@@ -64,7 +64,7 @@ nav {
   text-decoration: none;
   position: relative;
   font-family: 'Explora', sans-serif;
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* bigger nav text */
 }
 
 .nav-links a::after {
@@ -84,14 +84,14 @@ nav {
 
 /* HOME BUTTON */
 .home-btn {
-  padding: 10px 18px;
+  padding: 12px 20px;
   border: 1px solid var(--accent);
   color: var(--accent);
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* increased */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -123,7 +123,7 @@ nav {
   margin: 16px auto 0;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.25rem; /* bigger for readability */
+  font-size: 1.35rem; /* bigger hero paragraph */
 }
 
 /* BUTTONS */
@@ -135,14 +135,14 @@ nav {
 }
 
 .btn {
-  padding: 14px 28px;
+  padding: 16px 30px;
   border: 1px solid var(--accent);
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* bigger button text */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -150,7 +150,7 @@ nav {
 .btn.alt {
   background: transparent;
   color: var(--accent);
-  box-shadow: 0 0 10px rgba(127,12,19,0.6);
+  box-shadow: 0 0 12px rgba(127,12,19,0.6);
 }
 
 .btn:hover {
@@ -167,16 +167,16 @@ section {
 
 h2 {
   font-family: 'Explora', sans-serif;
-  font-size: 2.6rem; /* slightly bigger */
+  font-size: 2.6rem;
   margin-bottom: 24px;
 }
 
 /* PANELS */
 .panel {
   background: var(--panel);
-  padding: 32px;
+  padding: 36px;
   border: 1px solid var(--border);
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* bigger for readability */
 }
 
 /* ABOUT */
@@ -195,9 +195,9 @@ h2 {
 
 .track {
   background: var(--panel);
-  padding: 24px;
+  padding: 26px;
   border: 1px solid var(--border);
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* bigger */
 }
 
 /* SHOWS */
@@ -210,26 +210,26 @@ h2 {
   display: grid;
   grid-template-columns: 120px 1fr auto;
   gap: 20px;
-  padding: 20px;
+  padding: 22px;
   background: var(--panel);
   border: 1px solid var(--border);
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* bigger */
 }
 
 .date {
   font-family: 'Explora', sans-serif;
-  font-size: 1.3rem; /* slightly bigger */
+  font-size: 1.35rem; /* slightly bigger */
   color: var(--accent);
 }
 
 /* FOOTER */
 footer {
   border-top: 1px solid var(--border);
-  padding: 40px 24px;
+  padding: 44px 24px;
   text-align: center;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.15rem; /* increased */
+  font-size: 1.25rem; /* bigger footer text */
 }
 
 /* MOBILE */
