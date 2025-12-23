@@ -9,20 +9,20 @@
   --glow: 0 0 25px rgba(127,12,19,0.4);
 }
 
-/* GLOBAL RESET */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* DEFAULT FONT */
+/* BODY */
 body {
   font-family: 'Explora', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 2;
-  font-size: 1.15rem; /* ~18.4px for base text */
+  font-size: 1.15rem;
 }
 
 /* HEADER */
@@ -37,40 +37,42 @@ header {
 nav {
   max-width: 1200px;
   margin: auto;
-  padding: 16px 24px;
+  padding: 20px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
-/* LOGO */
+/* LOGO (BLEU VOX) */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.4rem; /* smaller hero/logo */
+  font-size: 2.9rem; /* slightly bigger for now */
   color: var(--accent);
   text-shadow: var(--glow);
+  white-space: nowrap;
 }
 
-/* NAVIGATION LINKS */
+/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 28px;
 }
 
 .nav-links a {
   color: var(--text);
   text-decoration: none;
-  position: relative;
   font-family: 'Explora', sans-serif;
-  font-size: 1.2rem; /* slightly bigger nav links */
+  font-size: 1.55rem; /* BIGGER NAV TEXT */
+  letter-spacing: 1px;
+  position: relative;
 }
 
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: -8px;
   left: 0;
   width: 0;
   height: 2px;
@@ -84,14 +86,13 @@ nav {
 
 /* HOME BUTTON */
 .home-btn {
-  padding: 14px 24px;
+  padding: 14px 26px;
   border: 1px solid var(--accent);
   color: var(--accent);
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 1.3rem; /* bigger buttons */
+  font-size: 1.35rem;
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -114,35 +115,34 @@ nav {
 
 .hero h1 {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: clamp(3rem, 8vw, 5rem); /* smaller hero title */
+  font-size: clamp(3rem, 8vw, 5rem);
   text-shadow: var(--glow);
 }
 
 .hero p {
   max-width: 640px;
-  margin: 16px auto 0;
+  margin: 20px auto 0;
   color: var(--muted);
-  font-family: 'Explora', sans-serif;
-  font-size: 1.4rem; /* bigger hero paragraph */
+  font-size: 1.4rem;
 }
 
-/* BUTTONS */
+/* CTA BUTTONS */
 .cta {
-  margin-top: 32px;
+  margin-top: 36px;
   display: flex;
-  gap: 16px;
+  gap: 18px;
   justify-content: center;
 }
 
 .btn {
-  padding: 16px 36px;
+  padding: 16px 38px;
   border: 1px solid var(--accent);
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  font-size: 1.35rem; /* bigger buttons */
+  font-size: 1.35rem;
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -166,21 +166,20 @@ section {
 }
 
 h2 {
-  font-family: 'Explora', sans-serif;
   font-size: 2.6rem;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 /* PANELS */
 .panel {
   background: var(--panel);
-  padding: 40px;
+  padding: 42px;
   border: 1px solid var(--border);
-  font-size: 1.45rem; /* bigger panels for Booking & About boxes */
+  font-size: 1.45rem;
 }
 
 .panel a {
-  font-size: 1.45rem; /* email link in Booking & Press larger */
+  font-size: 1.45rem;
 }
 
 /* ABOUT */
@@ -188,43 +187,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 40px;
-  font-size: 1.45rem; /* text in about boxes bigger */
-}
-
-/* MUSIC SECTION */
-.music-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  gap: 24px;
-}
-
-.track {
-  background: var(--panel);
-  padding: 30px;
-  border: 1px solid var(--border);
-  font-size: 1.4rem; /* bigger tracks */
-}
-
-/* SHOWS */
-.shows {
-  display: grid;
-  gap: 16px;
-}
-
-.show {
-  display: grid;
-  grid-template-columns: 120px 1fr auto;
-  gap: 20px;
-  padding: 26px;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  font-size: 1.4rem; /* bigger show text */
-}
-
-.date {
-  font-family: 'Explora', sans-serif;
-  font-size: 1.45rem; /* bigger date */
-  color: var(--accent);
+  font-size: 1.45rem;
 }
 
 /* FOOTER */
@@ -233,8 +196,7 @@ footer {
   padding: 48px 24px;
   text-align: center;
   color: var(--muted);
-  font-family: 'Explora', sans-serif;
-  font-size: 1.4rem; /* bigger footer text */
+  font-size: 1.4rem;
 }
 
 /* MOBILE */
@@ -243,5 +205,8 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
 
+  .nav-links a {
+    font-size: 1.4rem;
+  }
+}
