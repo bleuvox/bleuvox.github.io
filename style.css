@@ -21,8 +21,8 @@ body {
   font-family: 'Explora', sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.9;
-  font-size: 1.25rem; /* bigger for readability */
+  line-height: 2;
+  font-size: 1.4rem; /* BIGGER BASE FONT */
 }
 
 /* HEADER */
@@ -44,7 +44,7 @@ nav {
   gap: 20px;
 }
 
-/* LOGO — Script for big header */
+/* LOGO */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 2.8rem;
@@ -64,7 +64,7 @@ nav {
   text-decoration: none;
   position: relative;
   font-family: 'Explora', sans-serif;
-  font-size: 1.25rem; /* bigger nav text */
+  font-size: 1.35rem; /* bigger nav text */
 }
 
 .nav-links a::after {
@@ -84,14 +84,14 @@ nav {
 
 /* HOME BUTTON */
 .home-btn {
-  padding: 12px 20px;
+  padding: 12px 22px;
   border: 1px solid var(--accent);
   color: var(--accent);
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.25rem; /* increased */
+  font-size: 1.35rem; /* bigger */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -123,7 +123,7 @@ nav {
   margin: 16px auto 0;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.35rem; /* bigger hero paragraph */
+  font-size: 1.5rem; /* bigger hero paragraph */
 }
 
 /* BUTTONS */
@@ -135,14 +135,14 @@ nav {
 }
 
 .btn {
-  padding: 16px 30px;
+  padding: 16px 32px;
   border: 1px solid var(--accent);
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  font-size: 1.25rem; /* bigger button text */
+  font-size: 1.35rem; /* bigger button text */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -174,9 +174,9 @@ h2 {
 /* PANELS */
 .panel {
   background: var(--panel);
-  padding: 36px;
+  padding: 38px;
   border: 1px solid var(--border);
-  font-size: 1.25rem; /* bigger for readability */
+  font-size: 1.45rem; /* BIGGER panels, including Booking & Press */
 }
 
 /* ABOUT */
@@ -195,9 +195,9 @@ h2 {
 
 .track {
   background: var(--panel);
-  padding: 26px;
+  padding: 28px;
   border: 1px solid var(--border);
-  font-size: 1.25rem; /* bigger */
+  font-size: 1.4rem; /* bigger tracks */
 }
 
 /* SHOWS */
@@ -210,26 +210,26 @@ h2 {
   display: grid;
   grid-template-columns: 120px 1fr auto;
   gap: 20px;
-  padding: 22px;
+  padding: 24px;
   background: var(--panel);
   border: 1px solid var(--border);
-  font-size: 1.25rem; /* bigger */
+  font-size: 1.4rem; /* bigger show text */
 }
 
 .date {
   font-family: 'Explora', sans-serif;
-  font-size: 1.35rem; /* slightly bigger */
+  font-size: 1.45rem; /* bigger date */
   color: var(--accent);
 }
 
 /* FOOTER */
 footer {
   border-top: 1px solid var(--border);
-  padding: 44px 24px;
+  padding: 48px 24px;
   text-align: center;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.25rem; /* bigger footer text */
+  font-size: 1.4rem; /* bigger footer text */
 }
 
 /* MOBILE */
