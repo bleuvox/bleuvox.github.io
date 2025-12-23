@@ -37,32 +37,34 @@ nav {
   margin: auto;
   padding: 16px 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-/* LOGO – SCRIPT FONT */
-.logo {
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.8rem;
-  letter-spacing: 2px;
-  color: var(--accent);
-  text-shadow: var(--glow);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
+  justify-content: space-between;
   gap: 24px;
 }
 
-nav a {
+.logo {
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 2.8rem;
+  color: var(--accent);
+  text-shadow: var(--glow);
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-links a {
   color: var(--text);
   text-decoration: none;
   position: relative;
 }
 
-nav a::after {
+.nav-links a::after {
   content: '';
   position: absolute;
   bottom: -6px;
@@ -73,8 +75,25 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
+}
+
+/* HOME BUTTON */
+.home-btn {
+  padding: 10px 18px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: var(--glow);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.home-btn:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 /* HERO */
@@ -90,16 +109,13 @@ nav a:hover::after {
 .hero h1 {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: clamp(4rem, 9vw, 7rem);
-  letter-spacing: 2px;
-  margin-bottom: 16px;
   text-shadow: var(--glow);
 }
 
 .hero p {
   max-width: 640px;
-  margin: auto;
+  margin: 16px auto 0;
   color: var(--muted);
-  font-size: 1.1rem;
 }
 
 /* BUTTONS */
@@ -116,20 +132,12 @@ nav a:hover::after {
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
   box-shadow: var(--glow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn.alt {
   background: transparent;
   color: var(--accent);
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 40px rgba(127,12,19,0.6);
 }
 
 /* SECTIONS */
@@ -143,7 +151,6 @@ section h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 24px;
-  letter-spacing: 2px;
 }
 
 /* PANELS */
@@ -156,14 +163,14 @@ section h2 {
 /* ABOUT */
 .about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 40px;
 }
 
 /* MUSIC */
 .music-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 24px;
 }
 
@@ -186,7 +193,6 @@ section h2 {
   padding: 20px;
   background: var(--panel);
   border: 1px solid var(--border);
-  align-items: center;
 }
 
 .date {
@@ -204,9 +210,19 @@ footer {
 }
 
 /* MOBILE */
-@media (max-width: 700px) {
-  .show {
-    grid-template-columns: 1fr;
-    text-align: center;
+@media (max-width: 800px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    order: 3;
+    flex-wrap: wrap;
+  }
+
+  .home-btn {
+    order: 2;
   }
 }
+
