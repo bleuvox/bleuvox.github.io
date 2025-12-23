@@ -1,4 +1,3 @@
-/* style.css */
 :root {
   --bg: #000000;
   --panel: #0d0d0d;
@@ -10,14 +9,16 @@
   --glow: 0 0 25px rgba(127,12,19,0.4);
 }
 
+/* GLOBAL RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* DEFAULT FONT */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Explora', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -39,29 +40,28 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
 }
 
+/* LOGO — Script for big header */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 2.8rem;
   color: var(--accent);
   text-shadow: var(--glow);
-  white-space: nowrap;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 24px;
-  flex: 1;
-  justify-content: center;
+  gap: 20px;
 }
 
 .nav-links a {
   color: var(--text);
   text-decoration: none;
   position: relative;
+  font-family: 'Explora', sans-serif;
 }
 
 .nav-links a::after {
@@ -85,7 +85,8 @@ nav {
   border: 1px solid var(--accent);
   color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
+  font-family: 'Explora', sans-serif;
+  font-weight: bold;
   letter-spacing: 1px;
   box-shadow: var(--glow);
   transition: background 0.2s ease, color 0.2s ease;
@@ -116,6 +117,7 @@ nav {
   max-width: 640px;
   margin: 16px auto 0;
   color: var(--muted);
+  font-family: 'Explora', sans-serif;
 }
 
 /* BUTTONS */
@@ -132,6 +134,8 @@ nav {
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
+  font-family: 'Explora', sans-serif;
+  font-weight: bold;
   box-shadow: var(--glow);
 }
 
@@ -147,8 +151,8 @@ section {
   padding: 100px 24px;
 }
 
-section h2 {
-  font-family: 'Oswald', sans-serif;
+h2 {
+  font-family: 'Explora', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 24px;
 }
@@ -167,7 +171,7 @@ section h2 {
   gap: 40px;
 }
 
-/* MUSIC */
+/* MUSIC SECTION */
 .music-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
@@ -196,7 +200,7 @@ section h2 {
 }
 
 .date {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Explora', sans-serif;
   font-size: 1.4rem;
   color: var(--accent);
 }
@@ -207,6 +211,7 @@ footer {
   padding: 40px 24px;
   text-align: center;
   color: var(--muted);
+  font-family: 'Explora', sans-serif;
 }
 
 /* MOBILE */
@@ -215,14 +220,4 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .nav-links {
-    order: 3;
-    flex-wrap: wrap;
-  }
-
-  .home-btn {
-    order: 2;
-  }
 }
-
