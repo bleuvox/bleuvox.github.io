@@ -21,7 +21,8 @@ body {
   font-family: 'Explora', sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.15rem; /* increased readability */
 }
 
 /* HEADER */
@@ -51,6 +52,7 @@ nav {
   text-shadow: var(--glow);
 }
 
+/* NAVIGATION LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -62,6 +64,7 @@ nav {
   text-decoration: none;
   position: relative;
   font-family: 'Explora', sans-serif;
+  font-size: 1.15rem; /* increased */
 }
 
 .nav-links a::after {
@@ -88,13 +91,15 @@ nav {
   font-family: 'Explora', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  box-shadow: var(--glow);
-  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 1.15rem; /* increased */
+  box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
+  transition: all 0.3s ease;
 }
 
 .home-btn:hover {
   background: var(--accent);
   color: #fff;
+  box-shadow: 0 0 25px rgba(127,12,19,0.9), 0 0 40px rgba(127,12,19,0.6);
 }
 
 /* HERO */
@@ -118,6 +123,7 @@ nav {
   margin: 16px auto 0;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
+  font-size: 1.25rem; /* bigger for readability */
 }
 
 /* BUTTONS */
@@ -136,12 +142,20 @@ nav {
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  box-shadow: var(--glow);
+  font-size: 1.15rem; /* increased */
+  box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
+  transition: all 0.3s ease;
 }
 
 .btn.alt {
   background: transparent;
   color: var(--accent);
+  box-shadow: 0 0 10px rgba(127,12,19,0.6);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(127,12,19,0.9), 0 0 40px rgba(127,12,19,0.6);
 }
 
 /* SECTIONS */
@@ -153,7 +167,7 @@ section {
 
 h2 {
   font-family: 'Explora', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.6rem; /* slightly bigger */
   margin-bottom: 24px;
 }
 
@@ -162,6 +176,7 @@ h2 {
   background: var(--panel);
   padding: 32px;
   border: 1px solid var(--border);
+  font-size: 1.15rem; /* increased */
 }
 
 /* ABOUT */
@@ -182,6 +197,7 @@ h2 {
   background: var(--panel);
   padding: 24px;
   border: 1px solid var(--border);
+  font-size: 1.15rem; /* increased */
 }
 
 /* SHOWS */
@@ -197,11 +213,12 @@ h2 {
   padding: 20px;
   background: var(--panel);
   border: 1px solid var(--border);
+  font-size: 1.15rem; /* increased */
 }
 
 .date {
   font-family: 'Explora', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem; /* slightly bigger */
   color: var(--accent);
 }
 
@@ -212,6 +229,7 @@ footer {
   text-align: center;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
+  font-size: 1.15rem; /* increased */
 }
 
 /* MOBILE */
