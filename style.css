@@ -44,16 +44,16 @@ nav {
   gap: 30px;
 }
 
-/* LOGO (BLEU VOX) */
+/* LOGO */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.9rem; /* slightly bigger for now */
+  font-size: 2.9rem;
   color: var(--accent);
   text-shadow: var(--glow);
   white-space: nowrap;
 }
 
-/* NAV LINKS */
+/* NAV */
 .nav-links {
   list-style: none;
   display: flex;
@@ -64,7 +64,7 @@ nav {
   color: var(--text);
   text-decoration: none;
   font-family: 'Explora', sans-serif;
-  font-size: 1.55rem; /* BIGGER NAV TEXT */
+  font-size: 1.55rem;
   letter-spacing: 1px;
   position: relative;
 }
@@ -120,13 +120,13 @@ nav {
 }
 
 .hero p {
-  max-width: 640px;
+  max-width: 700px;
   margin: 20px auto 0;
   color: var(--muted);
-  font-size: 1.4rem;
+  font-size: 1.45rem;
 }
 
-/* CTA BUTTONS */
+/* CTA */
 .cta {
   margin-top: 36px;
   display: flex;
@@ -160,7 +160,7 @@ nav {
 
 /* SECTIONS */
 section {
-  max-width: 1200px;
+  max-width: 900px; /* tighter for bio readability */
   margin: auto;
   padding: 100px 24px;
 }
@@ -170,7 +170,19 @@ h2 {
   margin-bottom: 26px;
 }
 
-/* PANELS */
+/* ABOUT – BIO STYLE (NO BOXES) */
+.about {
+  font-size: 1.55rem;
+  line-height: 2.1;
+  color: var(--text);
+}
+
+.about p {
+  margin-bottom: 28px;
+  max-width: 720px;
+}
+
+/* BOOKING / PRESS */
 .panel {
   background: var(--panel);
   padding: 42px;
@@ -179,14 +191,6 @@ h2 {
 }
 
 .panel a {
-  font-size: 1.45rem;
-}
-
-/* ABOUT */
-.about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 40px;
   font-size: 1.45rem;
 }
 
@@ -208,5 +212,9 @@ footer {
 
   .nav-links a {
     font-size: 1.4rem;
+  }
+
+  section {
+    padding: 80px 20px;
   }
 }
