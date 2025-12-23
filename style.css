@@ -6,7 +6,7 @@
   --text: #f2f2f2;
   --muted: #b3b3b3;
   --border: rgba(255,255,255,0.08);
-  --glow: 0 0 25px rgba(127,12,19,0.4);
+  --glow: 0 0 25px rgba(127,12,19,0.6);
 }
 
 /* RESET */
@@ -44,7 +44,7 @@ nav {
   gap: 30px;
 }
 
-/* LOGO */
+/* LOGO (NAV) */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 2.9rem;
@@ -53,7 +53,7 @@ nav {
   white-space: nowrap;
 }
 
-/* NAV */
+/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -63,7 +63,6 @@ nav {
 .nav-links a {
   color: var(--text);
   text-decoration: none;
-  font-family: 'Explora', sans-serif;
   font-size: 1.55rem;
   letter-spacing: 1px;
   position: relative;
@@ -84,25 +83,6 @@ nav {
   width: 100%;
 }
 
-/* HOME BUTTON */
-.home-btn {
-  padding: 14px 26px;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  text-decoration: none;
-  font-family: 'Explora', sans-serif;
-  font-weight: bold;
-  font-size: 1.35rem;
-  box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
-  transition: all 0.3s ease;
-}
-
-.home-btn:hover {
-  background: var(--accent);
-  color: #fff;
-  box-shadow: 0 0 25px rgba(127,12,19,0.9), 0 0 40px rgba(127,12,19,0.6);
-}
-
 /* HERO */
 .hero {
   min-height: 90vh;
@@ -113,10 +93,12 @@ nav {
   padding: 80px 20px;
 }
 
+/* 🔴 MAIN HOME TITLE NOW RED */
 .hero h1 {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: clamp(3rem, 8vw, 5rem);
-  text-shadow: var(--glow);
+  color: var(--accent);
+  text-shadow: 0 0 30px rgba(127,12,19,0.9);
 }
 
 .hero p {
@@ -126,7 +108,7 @@ nav {
   font-size: 1.45rem;
 }
 
-/* CTA */
+/* CTA BUTTONS */
 .cta {
   margin-top: 36px;
   display: flex;
@@ -140,7 +122,6 @@ nav {
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
-  font-family: 'Explora', sans-serif;
   font-weight: bold;
   font-size: 1.35rem;
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
@@ -155,12 +136,12 @@ nav {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(127,12,19,0.9), 0 0 40px rgba(127,12,19,0.6);
+  box-shadow: 0 0 30px rgba(127,12,19,1), 0 0 45px rgba(127,12,19,0.7);
 }
 
 /* SECTIONS */
 section {
-  max-width: 900px; /* tighter for bio readability */
+  max-width: 900px;
   margin: auto;
   padding: 100px 24px;
 }
@@ -170,11 +151,10 @@ h2 {
   margin-bottom: 26px;
 }
 
-/* ABOUT – BIO STYLE (NO BOXES) */
+/* ABOUT BIO */
 .about {
   font-size: 1.55rem;
   line-height: 2.1;
-  color: var(--text);
 }
 
 .about p {
@@ -182,7 +162,7 @@ h2 {
   max-width: 720px;
 }
 
-/* BOOKING / PRESS */
+/* PANELS (Booking / Music / Shows) */
 .panel {
   background: var(--panel);
   padding: 42px;
@@ -192,6 +172,7 @@ h2 {
 
 .panel a {
   font-size: 1.45rem;
+  color: var(--accent);
 }
 
 /* FOOTER */
@@ -212,9 +193,5 @@ footer {
 
   .nav-links a {
     font-size: 1.4rem;
-  }
-
-  section {
-    padding: 80px 20px;
   }
 }
