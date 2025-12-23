@@ -22,7 +22,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 2;
-  font-size: 1.1rem; /* ~17.6px */
+  font-size: 1.15rem; /* ~18.4px for base text */
 }
 
 /* HEADER */
@@ -47,7 +47,7 @@ nav {
 /* LOGO */
 .logo {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.8rem; /* headers unchanged */
+  font-size: 2.4rem; /* smaller hero/logo */
   color: var(--accent);
   text-shadow: var(--glow);
 }
@@ -64,7 +64,7 @@ nav {
   text-decoration: none;
   position: relative;
   font-family: 'Explora', sans-serif;
-  font-size: 1.1rem; /* ~17px */
+  font-size: 1.2rem; /* slightly bigger nav links */
 }
 
 .nav-links a::after {
@@ -84,14 +84,14 @@ nav {
 
 /* HOME BUTTON */
 .home-btn {
-  padding: 12px 22px;
+  padding: 14px 24px;
   border: 1px solid var(--accent);
   color: var(--accent);
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.1rem; /* ~17px */
+  font-size: 1.3rem; /* bigger buttons */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -114,7 +114,7 @@ nav {
 
 .hero h1 {
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: clamp(4rem, 9vw, 7rem); /* headers unchanged */
+  font-size: clamp(3rem, 8vw, 5rem); /* smaller hero title */
   text-shadow: var(--glow);
 }
 
@@ -123,7 +123,7 @@ nav {
   margin: 16px auto 0;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.15rem; /* ~18.4px */
+  font-size: 1.4rem; /* bigger hero paragraph */
 }
 
 /* BUTTONS */
@@ -135,14 +135,14 @@ nav {
 }
 
 .btn {
-  padding: 16px 32px;
+  padding: 16px 36px;
   border: 1px solid var(--accent);
   background: linear-gradient(135deg, var(--accent-dark), var(--accent));
   color: #fff;
   text-decoration: none;
   font-family: 'Explora', sans-serif;
   font-weight: bold;
-  font-size: 1.15rem; /* ~18.4px */
+  font-size: 1.35rem; /* bigger buttons */
   box-shadow: 0 0 15px rgba(127,12,19,0.7), 0 0 25px rgba(127,12,19,0.5);
   transition: all 0.3s ease;
 }
@@ -167,16 +167,20 @@ section {
 
 h2 {
   font-family: 'Explora', sans-serif;
-  font-size: 2.6rem; /* headers unchanged */
+  font-size: 2.6rem;
   margin-bottom: 24px;
 }
 
 /* PANELS */
 .panel {
   background: var(--panel);
-  padding: 38px;
+  padding: 40px;
   border: 1px solid var(--border);
-  font-size: 1.2rem; /* ~19.2px — Booking & Press section included */
+  font-size: 1.45rem; /* bigger panels for Booking & About boxes */
+}
+
+.panel a {
+  font-size: 1.45rem; /* email link in Booking & Press larger */
 }
 
 /* ABOUT */
@@ -184,6 +188,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 40px;
+  font-size: 1.45rem; /* text in about boxes bigger */
 }
 
 /* MUSIC SECTION */
@@ -195,9 +200,9 @@ h2 {
 
 .track {
   background: var(--panel);
-  padding: 28px;
+  padding: 30px;
   border: 1px solid var(--border);
-  font-size: 1.2rem; /* ~19.2px */
+  font-size: 1.4rem; /* bigger tracks */
 }
 
 /* SHOWS */
@@ -210,15 +215,15 @@ h2 {
   display: grid;
   grid-template-columns: 120px 1fr auto;
   gap: 20px;
-  padding: 24px;
+  padding: 26px;
   background: var(--panel);
   border: 1px solid var(--border);
-  font-size: 1.2rem; /* ~19.2px */
+  font-size: 1.4rem; /* bigger show text */
 }
 
 .date {
   font-family: 'Explora', sans-serif;
-  font-size: 1.25rem; /* ~20px */
+  font-size: 1.45rem; /* bigger date */
   color: var(--accent);
 }
 
@@ -229,7 +234,7 @@ footer {
   text-align: center;
   color: var(--muted);
   font-family: 'Explora', sans-serif;
-  font-size: 1.2rem; /* ~19.2px */
+  font-size: 1.4rem; /* bigger footer text */
 }
 
 /* MOBILE */
@@ -239,3 +244,4 @@ footer {
     justify-content: center;
   }
 }
+
