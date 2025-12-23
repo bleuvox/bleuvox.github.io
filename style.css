@@ -6,7 +6,6 @@
   --text: #f2f2f2;
   --muted: #b3b3b3;
   --border: rgba(255,255,255,0.08);
-  --glow: 0 0 25px rgba(127,12,19,0.6);
 }
 
 /* RESET */
@@ -49,7 +48,7 @@ nav {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 2.9rem;
   color: var(--accent);
-  text-shadow: var(--glow);
+  text-shadow: 0 0 25px rgba(127,12,19,0.6);
   white-space: nowrap;
 }
 
@@ -93,12 +92,44 @@ nav {
   padding: 80px 20px;
 }
 
-/* 🔴 MAIN HOME TITLE NOW RED */
+/* 🔥 FLICKERING MAIN TITLE */
 .hero h1 {
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: clamp(3rem, 8vw, 5rem);
   color: var(--accent);
-  text-shadow: 0 0 30px rgba(127,12,19,0.9);
+  animation: redFlicker 8s infinite;
+}
+
+/* SUBTLE FLICKER KEYFRAMES */
+@keyframes redFlicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 18px rgba(127,12,19,0.5),
+                 0 0 30px rgba(127,12,19,0.6);
+  }
+  8% {
+    opacity: 0.95;
+    text-shadow: 0 0 12px rgba(127,12,19,0.4);
+  }
+  15% {
+    opacity: 1;
+    text-shadow: 0 0 28px rgba(127,12,19,0.8),
+                 0 0 45px rgba(127,12,19,0.6);
+  }
+  30% {
+    opacity: 0.97;
+    text-shadow: 0 0 14px rgba(127,12,19,0.5);
+  }
+  55% {
+    opacity: 1;
+    text-shadow: 0 0 26px rgba(127,12,19,0.9),
+                 0 0 50px rgba(127,12,19,0.7);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 18px rgba(127,12,19,0.6),
+                 0 0 30px rgba(127,12,19,0.5);
+  }
 }
 
 .hero p {
@@ -162,7 +193,7 @@ h2 {
   max-width: 720px;
 }
 
-/* PANELS (Booking / Music / Shows) */
+/* PANELS */
 .panel {
   background: var(--panel);
   padding: 42px;
