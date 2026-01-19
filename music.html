@@ -6,6 +6,12 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Explora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add red glow to embedded players */
+    .panel iframe {
+      box-shadow: 0 0 25px rgba(127,12,19,0.7), 0 0 45px rgba(127,12,19,0.5);
+    }
+  </style>
 </head>
 <body>
 
@@ -44,7 +50,7 @@
     </iframe>
   </div>
 
-  <!-- APPLE MUSIC EMBED -->
+  <!-- APPLE MUSIC EMBED (dark mode) -->
   <div class="panel">
     <iframe
       style="border-radius:12px; width:100%;"
@@ -52,7 +58,7 @@
       frameborder="0"
       allow="autoplay; encrypted-media; fullscreen; clipboard-write"
       sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-      src="https://embed.music.apple.com/in/song/alcoholic/1865656832">
+      src="https://embed.music.apple.com/in/song/alcoholic/1865656832?theme=dark">
     </iframe>
   </div>
 
