@@ -7,9 +7,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Explora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Add red glow to embedded players */
+    /* Red glow for embedded players */
     .panel iframe {
       box-shadow: 0 0 25px rgba(127,12,19,0.7), 0 0 45px rgba(127,12,19,0.5);
+    }
+
+    /* Make streaming links bigger and more readable */
+    .panel.streaming-links a {
+      font-size: 1.65rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .panel.streaming-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Increase general panel font slightly for readability */
+    .panel {
+      font-size: 1.55rem;
     }
   </style>
 </head>
@@ -63,7 +79,7 @@
   </div>
 
   <!-- STREAMING LINKS PANEL -->
-  <div class="panel">
+  <div class="panel streaming-links">
     <p>Listen on:</p>
     <p>
       <a href="https://open.spotify.com/track/1DhM9jKGHaIPBB3t0JwvqL" target="_blank">Spotify</a><br>
@@ -79,4 +95,3 @@
 
 </body>
 </html>
-
