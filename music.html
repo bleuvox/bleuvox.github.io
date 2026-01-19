@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bleu Vox -</title>
+  <title>Bleu Vox – Music</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Explora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="music.html">Music</a></li>
+      <li><a href="music.html" class="active">Music</a></li>
       <li><a href="shows.html">Shows</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -25,8 +25,45 @@
 <section>
   <h2>Music</h2>
 
+  <!-- SINGLE INFO -->
   <div class="panel">
-    <p>Spotify, Apple Music, and embedded players will go here.</p>
+    <h3>Alcoholic</h3>
+    <p>Out now.</p>
+  </div>
+
+  <!-- SPOTIFY EMBED -->
+  <div class="panel">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/1DhM9jKGHaIPBB3t0JwvqL?utm_source=generator&theme=0"
+      width="100%"
+      height="152"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- APPLE MUSIC EMBED -->
+  <div class="panel">
+    <iframe
+      style="border-radius:12px; width:100%;"
+      height="152"
+      frameborder="0"
+      allow="autoplay; encrypted-media; fullscreen; clipboard-write"
+      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+      src="https://embed.music.apple.com/in/song/alcoholic/1865656832">
+    </iframe>
+  </div>
+
+  <!-- STREAMING LINKS -->
+  <div class="panel">
+    <p>Listen on:</p>
+    <p>
+      <a href="https://open.spotify.com/track/1DhM9jKGHaIPBB3t0JwvqL" target="_blank">Spotify</a><br>
+      <a href="https://music.apple.com/in/song/alcoholic/1865656832" target="_blank">Apple Music</a><br>
+      <a href="SOUNDCLOUD_LINK" target="_blank">SoundCloud</a>
+    </p>
   </div>
 </section>
 
@@ -36,4 +73,3 @@
 
 </body>
 </html>
-
