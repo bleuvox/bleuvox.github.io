@@ -7,25 +7,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Explora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Red glow for embedded players */
-    .panel iframe {
-      box-shadow: 0 0 25px rgba(127,12,19,0.7), 0 0 45px rgba(127,12,19,0.5);
+    /* Heartbeat animation for embedded players */
+    @keyframes heartbeat {
+      0%, 100% {
+        box-shadow: 0 0 25px rgba(127,12,19,0.7), 0 0 45px rgba(127,12,19,0.5);
+      }
+      50% {
+        box-shadow: 0 0 40px rgba(127,12,19,1), 0 0 60px rgba(127,12,19,0.7);
+      }
     }
 
-    /* Make streaming links bigger and more readable */
+    .panel iframe {
+      animation: heartbeat 1.2s infinite;
+      border-radius: 12px;
+    }
+
+    /* Panel text slightly bigger for readability */
+    .panel {
+      font-size: 1.55rem;
+    }
+
+    /* Streaming links as glowing buttons */
     .panel.streaming-links a {
-      font-size: 1.65rem;
-      color: var(--accent);
+      display: inline-block;
+      padding: 12px 28px;
+      margin: 6px 0;
+      border: 1px solid var(--accent);
+      background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+      color: #fff;
       text-decoration: none;
+      font-size: 1.65rem;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #fff, 0 0 25px var(--accent);
+      transition: all 0.3s ease;
     }
 
     .panel.streaming-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Increase general panel font slightly for readability */
-    .panel {
-      font-size: 1.55rem;
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px #fff, 0 0 35px var(--accent);
     }
   </style>
 </head>
